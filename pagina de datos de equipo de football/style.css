@@ -1,0 +1,230 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+main {
+    flex: 3.2;
+    padding: 20px;
+    order: 2;
+    overflow: auto;
+}
+
+/*------------------------------------------------------------------------------------------------------ */
+
+/* Estilos para la barra de navegación */
+.navbar {
+
+    padding: 5px 0;
+    border-bottom: 2px solid #ccc;
+
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar a {
+    display: block;
+    color: black;
+    text-decoration: none; 
+    padding: 15px 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    background-color: #33ff002f;
+    transform: scale(1.02);
+}
+
+.search-form input[type = "text"]{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ccc;
+    width: 100vh;
+
+
+}
+
+.search-form button {
+    padding: 10px 20px; 
+    background-color: #595a566e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.search-form button:hover {
+    background-color: #595a56b7;
+    transform: scale(1.02);
+}
+
+.ordenarBoton,
+.FiltrarBoton{
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #595a566e;
+    color:white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;    
+}
+
+.ordenarBoton:hover,
+.FiltrarBoton:hover{
+    background-color: #595a56b7;
+    transform: scale(1.02);
+}
+
+/*------------------------------------------------------------------------------------------------------ */
+
+/* Tabla */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,td{
+    border: none;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f244;
+}
+
+.odd{
+    background-color: #33ff002f;
+}
+
+/*------------------------------------------------------------------------------------------------------ */
+/*Esto es lo que le da estilo al aside */
+aside {
+    flex: 0.8;
+    padding: 20px;
+    border-right: 2px solid #ccc;
+    order: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Image {
+    border-radius: 50%;
+    width: 140px; 
+    height: 140px; 
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #fff;
+    margin: 20px;
+}
+
+.ID {
+    color: rgb(196, 196, 196);
+    font-size: medium;
+}
+
+.Name {
+    color: rgb(104, 104, 104);
+    font-size: larger;
+}
+
+/* Styling for info containers */
+.info-container1 {
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    padding: 20px;
+    width: 300px; 
+    margin: 20px auto; /* Center horizontally */
+    background-color: #33ff004b;
+    transition: transform 0.2s ease-in-out;
+}
+
+.info-container1:hover {
+    background-color: #33ff0091;
+    transform: scale(1.02);
+}
+
+.info-item1 {
+    margin-bottom: 10px;
+}
+
+.label1 {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: medium;
+}
+
+.value1 {
+    font-size: small;
+}
+
+.info-container2 {
+    padding: 20px;
+    width: 300px; 
+    margin: 20px auto; 
+}
+
+.info-item2 {
+    margin-bottom: 15px; 
+}
+
+.label2 {
+    font-weight: bold;
+    display: inline-block; 
+    width: 100px; 
+    margin-right: 20px;
+}
+
+.value2 {
+    font-size: medium; 
+    color: #333; 
+}
+
+/* Estilo para los botones del footer */
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+    text-align: center;
+}
+
+.EditarBoton, .EliminarBoton {
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    padding: 15px;
+    width: 400px; 
+    margin: 10px auto;
+    background-color: #595a566e;
+    transition: transform 0.2s ease-in-out;
+    font-size: larger;
+}
+
+.EditarBoton:hover, .EliminarBoton:hover {
+    background-color: #595a56b7;
+    transform: scale(1.02);
+}
+
+/*------------------------------------------------------------------------------------------------------ */
+
+
